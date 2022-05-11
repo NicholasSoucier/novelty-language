@@ -1,0 +1,16 @@
+//Program to find the max of two numbers
+
+?0>?0<			//Read in two numbers
+=			//Start decrement-count loop
+ {->>+<			//If n1 =/= 0, decrement and count up
+  {-<}			//If n2 =/= 0, decrement
+  :			//Repeat Loop
+ }
+ >			//Move to n2 for check
+ {->+<			//If n2 =/= 0, decrement and count up
+  <{-}			//If n1 =/= 0, decrement
+  :			//Repeat Loop
+ }
+ <			//Move back to 1
+>>&0			//Print counter
+

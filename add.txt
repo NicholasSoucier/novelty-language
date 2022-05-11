@@ -1,0 +1,6 @@
+?0>?0		//Get two numbers in array
+{
+=
+ -<+>{:}	//Left-right flip addition
+}
+<&0		//Output result

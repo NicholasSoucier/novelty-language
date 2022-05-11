@@ -1,0 +1,12 @@
+//Program to find the min of two numbers
+
+?0>?0<			//Read in two numbers
+=			//Start decrement-count loop
+ {			//If num1 =/= 0, decrement and count
+  >{<			//If num2 =/= 0, decrement and count
+   ->->+<		//num1--; num2--; count++;
+   {<:}			//If num2 =/= 0, jump back unconditionally
+  }
+ }
+>>>>>^
+>>&0			//Move to count number and output number			
