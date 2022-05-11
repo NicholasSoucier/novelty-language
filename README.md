@@ -5,22 +5,40 @@ Reads in an input file (usually a text file, but not important), and breaks the 
 The tokens are then iterated through, simulating execution of those symbols in the program. They are simple operations that manipulate a unsigned 32-bit integer array and an unsigned 32-bit integer stack.
 
 Below is a list of operations possible in this language and their functions:
+
 '+' => Increment the value of array[index] by 1
+
 '-' => Decrement the value of array[index] by 1
+
 '_' => Set the value of array[index] to 0
+
 '<' => Shift the array index pointer left
+
 '>' => Shift the array index pointer right
+
 '^' => Shift the array index pointer to the value of array[index]
+
 '#' => Push the value of array[index] to the stack
+
 '$' => Pop from the stack and push into array[index]
+
 '&0' => Output the value of array[index] as a number to stdout
+
 '&a' => Output the value of array[index] as an ASCII character to stdout
+
 '?0' => Accept input as a number from stdin and push to array[index]
+
 '?a' => Accept input as an array of ASCII characters and push to array[index+array_char]
+
 '{' => Perform a conditional jump forwards to matching '}' when array[index] == 0
+
 '}' => Conditional jump marker
+
 ':' => Perform a non-conditional jump backwards to matching '='
+
 '=' => Non conditional jump marker
+
+
 
 Semantic Rules:
  - Integers are unsigned 32-bit integers, cannot be negative.
